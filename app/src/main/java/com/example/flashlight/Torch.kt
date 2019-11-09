@@ -13,6 +13,7 @@ class Torch(context: Context) {
     // as 연산자를 사용하여 CameraService형으로 형변환을 한다.
     private val cameraManager = context.getSystemService(Context.CAMERA_SERVICE) as CameraManager
 
+
     init{
         cameraId = getCameraId()
     }
