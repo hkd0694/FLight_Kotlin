@@ -11,8 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //val torch = Torch(this)
-
         flashSwitch.setOnCheckedChangeListener { _, isChecked ->
             if(isChecked){
                 startService(intentFor<TorchService>().setAction("on"))
